@@ -1,13 +1,15 @@
 package com.github.kraftykaleb.toggleNaturalSpawns;
 
+import com.github.kraftykaleb.toggleNaturalSpawns.listener.ChunkLoadListener;
+import com.github.kraftykaleb.toggleNaturalSpawns.listener.EntitySpawnListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ToggleNaturalSpawns extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        getServer().getPluginManager().registerEvents(new EntitySpawnListener(), this);
+        getServer().getPluginManager().registerEvents(new ChunkLoadListener(), this);
     }
 
     @Override

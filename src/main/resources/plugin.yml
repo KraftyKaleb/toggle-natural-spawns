@@ -2,5 +2,5 @@ name: toggle-natural-spawns
 version: '1.0.0'
 main: com.github.kraftykaleb.toggleNaturalSpawns.ToggleNaturalSpawns
 api-version: '1.21'
-authors: [ KraftyKaleb, Penguin71 ]
+authors: [ KraftyKaleb ]
 website: aluminis.net
